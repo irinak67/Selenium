@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.UI;
 
 namespace Selenium_2023
 {
@@ -72,6 +73,46 @@ namespace Selenium_2023
 
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateTime dt1 = new DateTime();
+            dt1 = DateTime.Now;
+
+            DateTime dt2 = new DateTime();
+            dt2 = DateTime.Now;
+
+            TimeSpan ts1 = new TimeSpan(dt1.Ticks);
+            TimeSpan ts2 = new TimeSpan(dt2.Ticks);
+
+            TimeSpan ts3 = ts2 - ts1;
+            
+            string url = "https://zionet-selenium.bubbleapps.io/version-test";
+
+            using (IWebDriver driver = new ChromeDriver())
+            {
+                driver.Navigate().GoToUrl(url);
+                Pause();
+                IWebElement aTag = driver.FindElement(By.Id("rJUDFxBO112"));
+
+                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+
+                wait.Until<int>((d) => {
+                driver.Navigate().GoToUrl("www.google.com"); 
+                return 0;
+            }) ;
+                
+                IWebElement b = wait.Until<IWebElement>((d) => { return d.FindElement(By.Id("sss")); });
+
+                if (aTag != null)
+                {
+                    aTag.Click();
+                    aTag.SendKeys("blalbla");
+
+                }
+
+            }
         }
     }
 }

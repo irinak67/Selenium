@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium_2023", "Selenium_2023.csproj", "{907179F7-5EE5-4281-925D-9E90EDEA906B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium_Auth0", "..\Selenium_Auth0\Selenium_Auth0.csproj", "{46981C10-B8DF-47D2-8B3A-07E2317AA62B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{907179F7-5EE5-4281-925D-9E90EDEA906B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{907179F7-5EE5-4281-925D-9E90EDEA906B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{907179F7-5EE5-4281-925D-9E90EDEA906B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46981C10-B8DF-47D2-8B3A-07E2317AA62B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46981C10-B8DF-47D2-8B3A-07E2317AA62B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46981C10-B8DF-47D2-8B3A-07E2317AA62B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46981C10-B8DF-47D2-8B3A-07E2317AA62B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
