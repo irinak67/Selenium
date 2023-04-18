@@ -14,13 +14,14 @@ namespace Selenium_GallerU_AUTH0
         }
         public void Start()
         {
-            string url = "https://blue-field-01c0eaf03.3.azurestaticapps.net";
+            string url = Config.URL;
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl(url);
             driver.Manage().Window.Maximize();
             Pause();
 
-            IWebElement loginBtn = driver.FindElement(By.CssSelector("button[class='button-0-2-2']"));
+            //IWebElement loginBtn = driver.FindElement(By.CssSelector("button[class='button-0-2-2']"));
+            IWebElement loginBtn = ElementFinder.Factory(driver).FindLoginButton();
             if (loginBtn != null)
             {
                 loginBtn.Click();
@@ -32,7 +33,7 @@ namespace Selenium_GallerU_AUTH0
 
         public void SingUp()
         {
-            IWebElement signUpBtn = driver.FindElement(By.CssSelector("a[class='c8d123439 ce1bebd2d']"));
+            IWebElement signUpBtn = ElementFinder.Factory(driver).FindSingUpButton();
             if (signUpBtn != null)
             {
                 try
@@ -56,7 +57,7 @@ namespace Selenium_GallerU_AUTH0
 
         public void SubmitSingUpClick()
         {
-            IWebElement submitBtn = driver.FindElement(By.Name("action"));
+            IWebElement submitBtn = ElementFinder.Factory(driver).FindSubmitButton();
             if (submitBtn != null)
             {
                 try
@@ -77,7 +78,7 @@ namespace Selenium_GallerU_AUTH0
 
         public void SubmitLoginClick()
         {
-            IWebElement submitBtn = driver.FindElement(By.Name("action"));
+            IWebElement submitBtn = ElementFinder.Factory(driver).FindSubmitButton();
             if (submitBtn != null)
             {
                 try
@@ -103,6 +104,7 @@ namespace Selenium_GallerU_AUTH0
                 Console.WriteLine("Something went wrong, please try again later");
             }
             else if (element.FindElements(By.CssSelector("span[id='error-element-email']")).Count != 0)
+            //else if (ElementFinder.Factory(driver).FindAlertWrongEmail() != 0)
             {
                 Console.WriteLine("Email is not valid");
             }

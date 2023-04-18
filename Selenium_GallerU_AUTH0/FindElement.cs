@@ -1,9 +1,4 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Selenium_GallerU_AUTH0
 {
@@ -11,17 +6,18 @@ namespace Selenium_GallerU_AUTH0
     {
         public override IWebElement FindEmailElement()
         {
-            return driver.FindElement(By.CssSelector("input[inputmode='email']"));
+            //return driver.FindElement(By.CssSelector("input[inputmode='email']"));
+            return ElementFinder.Factory(driver).FinsEmailInput();
         }
 
         public override IWebElement FindSingUpPasswordElement()
         {
-            return driver.FindElement(By.CssSelector("input[autocomplete='new-password']"));
+            return ElementFinder.Factory(driver).FindSingUpPasswordInput();
         }
 
         public override IWebElement FindLogInPasswordElement()
         {
-            return driver.FindElement(By.CssSelector("input[autocomplete='current-password']"));
+            return ElementFinder.Factory(driver).FindLoginPasswordInput();
         }
     }
 }

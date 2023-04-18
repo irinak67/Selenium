@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium_Auth0", "Selenium_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium_GallerU_AUTH0", "Selenium_GallerU_AUTH0\Selenium_GallerU_AUTH0.csproj", "{BBCE8860-E89B-4BDA-BCBD-6014B2138A32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTesting", "SeleniumTesting\SeleniumTesting.csproj", "{FE97ED64-698D-4F4F-8DDF-44A4D990C530}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.Tests", "Selenium.Tests\Selenium.Tests.csproj", "{ED5C50D7-81CE-4266-8D9A-312CB59A9B8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{BBCE8860-E89B-4BDA-BCBD-6014B2138A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBCE8860-E89B-4BDA-BCBD-6014B2138A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBCE8860-E89B-4BDA-BCBD-6014B2138A32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE97ED64-698D-4F4F-8DDF-44A4D990C530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE97ED64-698D-4F4F-8DDF-44A4D990C530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE97ED64-698D-4F4F-8DDF-44A4D990C530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE97ED64-698D-4F4F-8DDF-44A4D990C530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED5C50D7-81CE-4266-8D9A-312CB59A9B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED5C50D7-81CE-4266-8D9A-312CB59A9B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED5C50D7-81CE-4266-8D9A-312CB59A9B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED5C50D7-81CE-4266-8D9A-312CB59A9B8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,6 +40,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.Check_LogIn_SingUp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -151,7 +152,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(630, 210);
+            this.button7.Location = new System.Drawing.Point(9, 377);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(155, 107);
             this.button7.TabIndex = 11;
@@ -163,17 +164,29 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(625, 162);
+            this.label5.Location = new System.Drawing.Point(7, 331);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 26);
             this.label5.TabIndex = 12;
             this.label5.Text = "user don\'t exist";
             // 
+            // Check_LogIn_SingUp
+            // 
+            this.Check_LogIn_SingUp.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Check_LogIn_SingUp.Location = new System.Drawing.Point(713, 154);
+            this.Check_LogIn_SingUp.Name = "Check_LogIn_SingUp";
+            this.Check_LogIn_SingUp.Size = new System.Drawing.Size(217, 107);
+            this.Check_LogIn_SingUp.TabIndex = 13;
+            this.Check_LogIn_SingUp.Text = "Log In / Sing Up";
+            this.Check_LogIn_SingUp.UseVisualStyleBackColor = true;
+            this.Check_LogIn_SingUp.Click += new System.EventHandler(this.Check_LogIn_SingUp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1014, 496);
+            this.Controls.Add(this.Check_LogIn_SingUp);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -207,6 +220,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Check_LogIn_SingUp;
     }
 }
 

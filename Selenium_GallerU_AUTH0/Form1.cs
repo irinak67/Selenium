@@ -66,6 +66,11 @@ namespace Selenium_GallerU_AUTH0
             FindElement findElement = new FindElement();
             findElement.RunLogIn(uncorrectName, correctPassword);
         }
-                
+
+        private void Check_LogIn_SingUp_Click(object sender, EventArgs e)
+        {
+            Scripts scripts = new Scripts();
+            scripts.RunLoginSingUp();
+        }
     }
 }
